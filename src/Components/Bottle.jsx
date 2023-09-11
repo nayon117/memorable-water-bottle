@@ -1,4 +1,4 @@
-const Bottle = ({ bottle }) => {
+const Bottle = ({ bottle,handleAddToCart }) => {
   return (
     <div>
       <div className="card bg-base-100 shadow-xl">
@@ -9,7 +9,7 @@ const Bottle = ({ bottle }) => {
           <h2 className="card-title mx-auto">{bottle.name}</h2>
           <p>Price: {bottle.price} $ </p>
           <div className="card-actions justify-center ">
-            <button className="btn btn-primary">Purchase</button>
+            <button onClick={()=>handleAddToCart(bottle)} className="btn btn-primary">Purchase</button>
           </div>
         </div>
       </div>
