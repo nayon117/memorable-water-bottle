@@ -1,5 +1,6 @@
 import './App.css'
 import Bottles from './Components/Bottles'
+import Footer from './Components/Footer'
 import Navbar from './Components/Navbar'
 
 function App() {
@@ -7,7 +8,8 @@ function App() {
   return (
     <>
       <Navbar />
-      <Bottles/>
+      <Bottles />
+      <Footer/>
     </>
   )
 }
