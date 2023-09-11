@@ -1,6 +1,6 @@
 const Navbar = () => {
   return (
-    <div>
+    <div className="container mx-auto px-4 md:px-8 lg:px-16 py-2">
       <div className="navbar bg-base-100">
         <div className="navbar-start">
           <div className="dropdown">
@@ -20,20 +20,26 @@ const Navbar = () => {
                 />
               </svg>
             </label>
-            
+            <ul tabIndex="0" className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+        <li><a>Home</a></li>
+        <li>
+          <a>Services</a> 
+        </li>
+        <li><a>About</a></li>
+      </ul>
           </div>
           <a className="btn btn-ghost normal-case text-xl text-primary">AquaHydrate</a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <a>Home</a>
+              <a className="text-primary">Home</a>
             </li>
             <li >
-                <summary>Sevices</summary>
+                <summary className="text-primary">Sevices</summary>
             </li>
             <li>
-              <a>About</a>
+              <a className="text-primary">About</a>
             </li>
           </ul>
         </div>
