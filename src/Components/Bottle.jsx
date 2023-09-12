@@ -1,4 +1,5 @@
-const Bottle = ({ bottle,handleAddToCart }) => {
+import PropTypes from 'prop-types'
+const Bottle = ({ bottle, handleAddToCart }) => {
   return (
     <div>
       <div className="card bg-base-100 shadow-xl">
@@ -17,4 +18,8 @@ const Bottle = ({ bottle,handleAddToCart }) => {
   );
 };
 
+Bottle.propTypes = {
+  bottle: PropTypes.object.isRequired,
+  handleAddToCart:PropTypes.func.isRequired
+}
 export default Bottle;
